@@ -6,7 +6,8 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    scroll-behavior: 'poppins',sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
 }
 :root{
     --bg-color:#000000;
@@ -202,7 +203,7 @@ span{
     position: relative;
 }
 .typing-text span::before{
-   content: 'software Developer';
+   content: 'Developer';
    color: var(--main-color);
    animation: words 20s infinite; 
 }
@@ -227,13 +228,13 @@ span{
 
     }
     21% ,40%{
-        content:'software developer';
+        content:'developer';
     }
     41%,60%{
-        content: 'photographer';
+        content: 'web designer';
     }
     61%,80%{
-        content: 'web designer';
+        content: 'photographer';
     }
     81%,100%{
         content: 'youtuber';
@@ -245,13 +246,13 @@ span{
     50%, 55%,
     70%, 75%,
     90%, 95%{
-        width: 0;
+     width: 0;
     }
     5%, 20%,
     25%, 40%,
     45%, 60%,
     65%, 80%, 85%{
-        width: calc(100% + 8px);
+  width: calc(100% + 8px);
     }
 }
  @media (max-width:1000px){
@@ -259,7 +260,7 @@ span{
         gap: 4rem;
     }
  }
- @media (max-width:995){
+ @media (max-width:995px){
 
     .home{
         flex-direction: column;
@@ -329,7 +330,7 @@ span{
         margin-bottom: 3rem;
     }
     .services-container{
-        grid-template-columns: repeat(1.1fr);
+        grid-template-columns: repeat(1,1fr);
     }
  }
  .skills{
@@ -380,7 +381,7 @@ span{
     font-weight: 600;
     text-align: center;
  }
-  @media screen and(max-width:600px) {
+  @media screen and (max-width:600px) {
     .skills .container{
         margin: 0;
         padding: 0;
@@ -390,7 +391,7 @@ span{
         margin: 1rem;
         padding: 2rem 0.2rem 2rem 0.2rem;
         gap: 1rem;
-    }
+    } 
     .skills .container{
         margin-top: 5px;
         width: 100%;
